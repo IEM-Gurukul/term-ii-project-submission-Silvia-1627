@@ -1,18 +1,18 @@
 package elevator.main;
 
 import elevator.model.Elevator;
-import elevator.model.Request;
+import elevator.controller.ElevatorController;
 
 public class Main {
 
     public static void main(String[] args) {
 
         Elevator elevator = new Elevator();
+        ElevatorController controller = new ElevatorController(elevator);
 
-        Request r1 = new Request(5);
-        Request r2 = new Request(2);
+        controller.requestFloor(5);
+        controller.requestFloor(2);
+        controller.requestFloor(7);
 
-        elevator.moveToFloor(r1.getFloorNumber());
-        elevator.moveToFloor(r2.getFloorNumber());
     }
 }
