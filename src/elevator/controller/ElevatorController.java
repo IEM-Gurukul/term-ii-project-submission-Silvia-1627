@@ -19,6 +19,10 @@ public class ElevatorController {
 
     // Method to handle floor request
     public void requestFloor(int floor) {
+        if (floor < 0 || floor > 10) {
+            System.out.println("Invalid floor: " + floor);
+            return;
+        }
 
         System.out.println("\nRequest received for floor: " + floor);
     
