@@ -24,7 +24,9 @@ public class ElevatorController {
             return;
         }
 
-        System.out.println("\nRequest received for floor: " + floor);
+        System.out.println("\n==============================");
+        System.out.println("Request received for floor: " + floor);
+        System.out.println("==============================");
     
         requestQueue.add(floor);
     
