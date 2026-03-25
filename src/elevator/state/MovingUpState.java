@@ -15,5 +15,8 @@ public class MovingUpState implements State {
         }
 
         System.out.println("Reached Floor " + floor);
+System.out.println("Door Opening...");
+System.out.println("Door Closing...");
+System.out.println("Request completed successfully");
     }
 }
